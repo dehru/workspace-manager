@@ -1,0 +1,76 @@
+:host {
+    width: 100%;
+    padding: 2rem;
+    color: #080707;
+}
+.workspace {
+    width: 95%;
+    display: flex;
+    font-size: 1rem;
+    justify-content: space-between;
+    text-align: left;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: transparent;
+    border: 1px solid #dddbda;
+    align-items: center;
+    border-left: 3px solid #0277bd;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+.workspace:hover {
+    background-color: #e1f5fe;
+    cursor: pointer;
+    text-decoration: none;
+}
+.workspace p {
+    margin: 0;
+}
+.workspace .title {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.workspace .icon {
+    color: #039be5;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 1.75rem;
+}
+.workspace .icon.time {
+    background-image: url(https://developer.salesforce.com/files/js-dev/icons/clock.svg);
+    margin-top: 0.6rem;
+}
+.workspace .icon.room {
+    background-image: url(https://developer.salesforce.com/files/js-dev/icons/automate.svg);
+    margin-top: 0.4rem;
+}
+input {
+    border: 1px solid #dddbda;
+    border-radius: 0.25rem;
+    transition: border 0.1s linear, background-color 0.1s linear;
+    display: inline-block;
+    padding: 0 1rem 0 0.75rem;
+    line-height: 2rem;
+    font-size: 1rem;
+    width: 15rem;
+}
+
+.button {
+    background-color: #0277bd; /* Green */
+    border: none;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+.author-pictures {
+    display: flex;
+    justify-content: end;
+}
+.author-pictures > img {
+    border-radius: 50%;
+    height: 3.5rem;
+    margin-left: 0.5rem;
+}

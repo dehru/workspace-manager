@@ -1,0 +1,27 @@
+<template>
+    <div class="list">
+        <div class="page-nav">
+                <button class="button"
+                oninput={handleCreate}>Create New Workspace</button>
+        </div>
+        <template for:each={workspaces} for:item="workspace" for:index="index">
+            <a key={workspace.id} class="workspace">
+                <div>
+                    <p class="title">{workspace.name}</p>
+                    <p class="icon time">{workspace.dateTime}</p>
+                    <p class="icon room">{workspace.room}</p>
+                </div>
+                <div class="author-pictures">
+                    <template for:each={workspace.authors} for:item="author">
+                        <img
+                            key={author.id}
+                            src={author.pictureUrl}
+                            alt={author.name}
+                            title={author.name}
+                        />
+                    </template>
+                </div>
+            </a>
+        </template>
+    </div>
+</template>
