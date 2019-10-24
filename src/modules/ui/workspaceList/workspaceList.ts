@@ -7,7 +7,7 @@ export default class SessionList extends LightningElement {
             this.workspaces = result;
         });
     }
-    handleCreate(event) {
+    handleCreate() {
         // new workspace event
     }
 }

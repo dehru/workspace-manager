@@ -64,7 +64,7 @@ input {
     display: inline-block;
     font-size: 1rem;
     cursor: pointer;
-  }
+}
 .author-pictures {
     display: flex;
     justify-content: end;

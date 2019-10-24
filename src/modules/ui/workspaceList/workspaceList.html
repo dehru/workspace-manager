@@ -1,8 +1,9 @@
 <template>
     <div class="list">
         <div class="page-nav">
-                <button class="button"
-                oninput={handleCreate}>Create New Workspace</button>
+            <button class="button" oninput={handleCreate}>
+                Create New Workspace
+            </button>
         </div>
         <template for:each={workspaces} for:item="workspace" for:index="index">
             <a key={workspace.id} class="workspace">
